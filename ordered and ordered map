@@ -1,0 +1,25 @@
+//ordered or unordered map
+#include <iostream>
+#include<map>
+#include<unordered_map>
+using namespace std;
+int main() {
+    unordered_map <string,int> m;
+    pair<string,int> p("subham",36);
+    m.insert(p);
+    m["shri"]=49;
+    m["ashish"]=52;
+    m["shruti"]=30;
+    pair<string,int> p1("avinash",50);
+    m.insert(p1);
+    cout<<m.at("subham")<<endl;
+    unordered_map <string,int> :: iterator it;
+    for(auto it=m.begin();it!=m.end();it++)
+    {
+        cout<<it->first<<" "<<it->second<<endl;
+    }
+    
+    
+   
+  
+}
